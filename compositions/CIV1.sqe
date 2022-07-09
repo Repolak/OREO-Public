@@ -1,0 +1,78 @@
+version=53;
+center[]={4952.0122,571.27509,17484.947};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.0014648438,0.05078125};
+					angles[]={0,2.8147447,0};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+					skill=0.55933601;
+				};
+				id=1528;
+				type="LOP_Tak_Civ_Man_16";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.99000001;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=1527;
+	};
+};

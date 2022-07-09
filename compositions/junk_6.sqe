@@ -1,0 +1,22 @@
+version=54;
+center[]={8099.4194,3.3439817,8334.4404};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0009765625,0.074307442,0};
+			angles[]={0.0010918301,0,0.0056417165};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=3401;
+		type="Land_Tyre_F";
+	};
+};

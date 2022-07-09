@@ -1,0 +1,79 @@
+version=54;
+center[]={8277.9746,296.04001,2048.8877};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="roadblock1";
+		class Entities
+		{
+			items=4;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.34570313,0.728302,1.8615723};
+					angles[]={-0,2.8904769,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=952;
+				type="Land_Wreck_Car3_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.19726563,0.84292603,-2.1091309};
+					angles[]={-0,6.0801158,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=953;
+				type="Land_Wreck_Car2_F";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.6679688,0.84603882,-6.8273926};
+					angles[]={-0,6.0255995,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=950;
+				type="Land_Wreck_UAZ_F";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.5175781,0.93481445,7.074707};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=951;
+				type="Land_Wreck_Offroad_F";
+			};
+		};
+		id=954;
+	};
+};

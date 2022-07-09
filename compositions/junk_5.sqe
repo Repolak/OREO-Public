@@ -1,0 +1,22 @@
+version=54;
+center[]={8105.8081,3.4147701,8327.2686};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.051916122,0};
+			angles[]={6.2820935,0,0.011288759};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=3400;
+		type="Land_Garbage_square3_F";
+	};
+};

@@ -1,0 +1,72 @@
+allowProfileGlasses = 0;
+enableDebugConsole = 1;
+
+
+
+
+
+
+
+class Extended_InitPost_EventHandlers {
+     class CAManBase {
+		init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
+	};
+};
+
+class CfgFunctions
+{
+	#include "INC_undercover\cfgFunctions.hpp"
+  #include "LARs\spawnComp\functions\functions.cpp"
+  #define HALs_DEF_FUNCTIONS
+    #include "HALs\Addons\main\config.hpp"
+  #undef HALs_DEF_FUNCTIONS
+};
+
+class CfgRemoteExec
+{
+   class Functions
+   {
+       mode = 2;
+       jip = 1;
+       #include "INC_undercover\functionsWhitelist.hpp"
+   };
+};
+
+#include "compositions\compositions.cfg"
+#include "defines.hpp"
+#include "dialogs.hpp"
+#define HALs_DEF_INIT
+	#include "HALs\Addons\main\config.hpp"
+#undef HALs_DEF_INIT
+
+class CfgSounds
+{
+	sounds[] = {maskBreathe};
+
+	class maskBreathe
+	{
+		name = "maskBreathe";
+		sound[] = {"sounds\oxygenBreathing.ogg", db+0, 1};
+		titles[] = {};
+	};
+  class boom
+  {
+    name = "boom";
+    sound[] = {"sounds\boom.ogg", db+10, 1};
+    titles[] = {};
+  };
+};
+
+respawnOnStart = -1;
+
+class CfgDiscordRichPresence {
+    applicationID="898639368653258792";             // Provided by discord
+    defaultDetails="Conducting Operations";            // Upper text
+    defaultState="Ready for battle";              // Lower text
+    defaultLargeImageKey="oda524";      // Large image
+    defaultLargeImageText="Special Reaction Team - Realism Unit";     // Large image hover text
+    defaultSmallImageKey="";      // Small image
+    defaultSmallImageText="";     // Small image hover text
+    defaultButtons[]={};          // Button texts and urls
+    useTimeElapsed=1;             // Show time elapsed since the player connected (1 - true, 0 - false)
+};

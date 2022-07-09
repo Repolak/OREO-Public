@@ -1,0 +1,267 @@
+version=54;
+center[]={3982.6382,5,4159.666};
+class items
+{
+	items=7;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.4609375,1.0038056,-2.0180664};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=89;
+		type="Land_Shed_12_F";
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.12573242,0.4322958,0.29248047};
+			angles[]={-0,4.7160277,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="[this, [""Attach Tracker"",{[_this select 0,_this select 2] remoteExec [""vics_tsk_drugProdDisable"",2];},nil,1.5,true,true,"""",""true"",2]] remoteExec [""addAction"",0,true];";
+			disableSimulation=1;
+		};
+		id=90;
+		type="Land_WoodenTable_small_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.52319336,1.5260191,0.0073242188};
+			angles[]={-0,4.7160277,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=91;
+		type="UMI_Item_Money";
+		atlOffset=0.00019407272;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.040527344,1.5260191,0.48291016};
+			angles[]={-0,4.7160277,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=92;
+		type="UMI_Item_Coke_Pile_01";
+		atlOffset=0.00019407272;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.37866211,1.5260191,0.1484375};
+			angles[]={-0,4.7160277,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=93;
+		type="UMI_Item_Cocaine_Brick";
+		atlOffset=0.00019407272;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.38256836,1.5260191,0.41113281};
+			angles[]={-0,4.7160277,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=94;
+		type="UMI_Item_Cocaine_Brick";
+		atlOffset=0.00019407272;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item6
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.38647461,1.525897,0.67578125};
+			angles[]={-0,4.7160277,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=95;
+		type="UMI_Item_Cocaine_Brick";
+		atlOffset=7.2002411e-005;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

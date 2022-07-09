@@ -1,0 +1,116 @@
+version=54;
+center[]={4115.5347,5,4114.7051};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="Camp Site [OPF] #1";
+		class Entities
+		{
+			items=6;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-4.8452148,0.58268595,-0.31738281};
+					angles[]={-0,5.497787,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					skill=0.2;
+				};
+				id=1;
+				type="Land_TentA_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.65478516,0.58268595,2.3076172};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					skill=0.2;
+				};
+				id=2;
+				type="Land_TentA_F";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.8515625,0.039435863,-1.0488281};
+					angles[]={-0,3.3057933,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					skill=0.2;
+				};
+				id=3;
+				type="Land_Garbage_square5_F";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.7319336,0.039435863,-0.055175781};
+					angles[]={-0,3.3057933,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					skill=0.2;
+				};
+				id=4;
+				type="Land_Garbage_square5_F";
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.77978516,0.048294544,-2.0673828};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					skill=0.2;
+				};
+				id=12;
+				type="FirePlace_burning_F";
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={4.5297852,0.58268595,1.1821289};
+					angles[]={-0,0.2617994,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					skill=0.2;
+				};
+				id=15;
+				type="Land_TentA_F";
+			};
+		};
+		id=17;
+	};
+};

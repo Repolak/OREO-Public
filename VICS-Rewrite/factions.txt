@@ -1,0 +1,138 @@
+_patrol = ["rhsgref_ins_rifleman","rhsgref_ins_rifleman_aks74","rhsgref_ins_medic","rhsgref_ins_machinegunner"];
+_scout = ["rhsgref_ins_spotter","rhsgref_ins_sniper"];
+_glTeam = ["rhsgref_ins_squadleader","rhsgref_ins_rifleman","rhsgref_ins_medic","rhsgref_ins_grenadier"];
+cqb = ["rhsgref_ins_rifleman_aks74"];
+_vehLight = [["rhsgref_ins_uaz_dshkm",5]];
+_vehMed = [["rhsgref_ins_uaz_dshkm",5]];
+_vehHeavy = [["rhsgref_ins_uaz_dshkm",5]];
+groupsDesignation = [_patrol,_scout,_glTeam];
+vehs = [_vehLight,_vehMed,_vehHeavy];
+
+
+
+
+
+
+
+
+_patrol = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MD"];
+_scout = ["UK3CB_TKM_O_SPOT","UK3CB_TKM_O_SNI"];
+_glTeam = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_GL"];
+_heavySquad = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MG""UK3CB_TKM_O_MG_ASST","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MD"];
+cqb = ["UK3CB_TKM_O_RIF_2"];
+_vehLight = [["rhsgref_ins_uaz_dshkm",5]];
+_vehMed = [["rhsgref_ins_uaz_dshkm",5]];
+_vehHeavy = [["rhsgref_ins_uaz_dshkm",5]];
+groupsDesignation = [_patrol,_scout,_glTeam,_heavySquad];
+genUnitPool = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1"];
+vehs = [_vehLight,_vehMed,_vehHeavy];
+civilians = ["UK3CB_TKC_C_CIV"];
+
+
+
+
+
+GREF:
+_patrol = ["rhsgref_ins_rifleman","rhsgref_ins_rifleman_aks74","rhsgref_ins_medic","rhsgref_ins_machinegunner"];
+_scout = ["rhsgref_ins_spotter","rhsgref_ins_sniper"];
+_glTeam = ["rhsgref_ins_squadleader","rhsgref_ins_rifleman","rhsgref_ins_medic","rhsgref_ins_grenadier"];
+cqb = ["rhsgref_ins_rifleman_aks74"];
+_heavySquad = ["rhsgref_ins_squadleader","rhsgref_ins_rifleman","rhsgref_ins_rifleman","rhsgref_ins_rifleman","rhsgref_ins_machinegunner""rhsgref_ins_machinegunner","rhsgref_ins_rifleman","rhsgref_ins_medic"];
+_vehLight = [["rhsgref_ins_uaz_dshkm",5]];
+_vehMed = [["rhsgref_ins_uaz_dshkm",5]];
+_vehHeavy = [["rhsgref_ins_uaz_dshkm",5]];
+groupsDesignation = [_patrol,_patrol,_patrol,_scout,_glTeam,_glTeam,_heavySquad,_heavySquad];
+genUnitPool = ["rhsgref_ins_squadleader","rhsgref_ins_rifleman","rhsgref_ins_rifleman"];
+vehs = [_vehLight,_vehMed,_vehHeavy];
+civilians = ["UK3CB_CHC_C_CIV"];
+
+
+
+
+
+TAK:
+_patrol = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MD"];
+_scout = ["UK3CB_TKM_O_SPOT","UK3CB_TKM_O_SNI"];
+_glTeam = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_GL"];
+_heavySquad = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MG""UK3CB_TKM_O_MG_ASST","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MD"];
+cqb = ["UK3CB_TKM_O_RIF_2"];
+_vehLight = [["rhsgref_ins_uaz_dshkm",5]];
+_vehMed = [["rhsgref_ins_uaz_dshkm",5]];
+_vehHeavy = [["rhsgref_ins_uaz_dshkm",5]];
+groupsDesignation = [_patrol,_scout,_glTeam,_heavySquad];
+genUnitPool = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1"];
+vehs = [_vehLight,_vehMed,_vehHeavy];
+civilians = ["UK3CB_TKC_C_CIV"];
+
+
+
+
+
+
+TAK Police:
+_patrol = ["UK3CB_TKP_O_TL","UK3CB_TKP_O_RIF_1","UK3CB_TKP_O_RIF_1","UK3CB_TKP_O_MD"];
+_scout = ["UK3CB_TKP_O_MK","UK3CB_TKP_O_RIF_1"];
+_glTeam = ["UK3CB_TKP_O_TL","UK3CB_TKP_O_RIF_1","UK3CB_TKP_O_RIF_1","UK3CB_TKP_O_AT"];
+_heavySquad = ["UK3CB_TKP_O_TL","UK3CB_TKP_O_RIF_1","UK3CB_TKP_O_RIF_1","UK3CB_TKP_O_RIF_1","UK3CB_TKP_O_MG""UK3CB_TKP_O_AR","UK3CB_TKP_O_RIF_1","UK3CB_TKP_O_MD"];
+cqb = ["UK3CB_TKP_O_RIF_1"];
+_vehLight = [["rhsgref_ins_uaz_dshkm",5]];
+_vehMed = [["rhsgref_ins_uaz_dshkm",5]];
+_vehHeavy = [["rhsgref_ins_uaz_dshkm",5]];
+groupsDesignation = [_patrol,_scout,_glTeam,_heavySquad];
+genUnitPool = ["UK3CB_TKP_O_RIF_1","UK3CB_TKP_O_RIF_1","UK3CB_TKP_O_RIF_1"];
+vehs = [_vehLight,_vehMed,_vehHeavy];
+civilians = ["C_Man_1_enoch_F","C_Man_2_enoch_F","C_Man_3_enoch_F","C_Man_4_enoch_F","C_Man_5_enoch_F","C_Man_6_enoch_F","C_Farmer_1_enoch_F"];
+
+
+
+TAKI HADJI:
+_patrol = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_AT","UK3CB_TKM_O_MD"];
+_scout = ["UK3CB_TKM_O_SPOT","UK3CB_TKM_O_SNI"];
+_glTeam = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_GL"];
+_heavySquad = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MG","UK3CB_TKM_O_MG_ASST","UK3CB_TKM_O_AT","UK3CB_TKM_O_MD"];
+_Platoon = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MG","UK3CB_TKM_O_MG_ASST","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MD","UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_AT","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MG","UK3CB_TKM_O_MG_ASST","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MD"];
+_Platoon2 = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MG","UK3CB_TKM_O_MG_ASST","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MD","UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_AT","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MG","UK3CB_TKM_O_MG_ASST","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_MD"];
+cqb = ["UK3CB_TKM_O_RIF_2"];
+_vehLight = [["rhsgref_ins_uaz_dshkm",5],["UK3CB_TKM_O_Pickup_DSHKM",5],["UK3CB_TKM_O_Hilux_Pkm",4]];
+_vehMed = [["rhsgref_ins_uaz_dshkm",5],["UK3CB_TKM_O_Pickup_DSHKM",5],["UK3CB_TKM_O_Hilux_Pkm",4],["UK3CB_TKM_0_Hilux_spg9",10]];
+_vehHeavy = [["rhsgref_ins_uaz_dshkm",5],["UK3CB_TKM_O_Pickup_DSHKM",5],["UK3CB_TKM_O_Hilux_Pkm",4],["UK3CB_TKM_0_Hilux_spg9",10]];
+groupsDesignation = [_patrol,_scout,_glTeam,_heavySquad,_Platoon,_Platoon2];
+genUnitPool = ["UK3CB_TKM_O_TL","UK3CB_TKM_O_RIF_1","UK3CB_TKM_O_RIF_1"];
+vehs = [_vehLight,_vehMed,_vehHeavy];
+civilians = ["UK3CB_TKC_C_CIV"];
+civVehicles = ["UK3CB_C_Hatchback"];
+_infantryTeam = ["rhsusf_army_ocp_teamleader","rhsusf_army_ocp_rifleman","rhsusf_army_ocp_rifleman","rhsusf_army_ocp_autorifleman"];
+_sfTeam = ["rhsusf_socom_marsoc_teamchief","rhsusf_socom_marsoc_cso","rhsusf_socom_marsoc_cso","rhsusf_socom_marsoc_marksman"];
+_infSquad = [];
+bluforGroupsDesignation = [_infantryTeam,_sfTeam];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[["rhs_weap_mk18_KAC_bk","Tier1_SOCOM556_Black","rhsusf_acc_anpeq15side_bk","rhsusf_acc_su230",["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",30],[],""],[],["rhsusf_weap_glock17g4","","","",["rhsusf_mag_17Rnd_9x19_JHP",17],[],""],["tfl_new_MC_fs_uniform",[["ACE_MapTools",1],["ACE_tourniquet",4],["ACE_fieldDressing",10],["ACE_CableTie",1],["ACE_splint",4],["ACE_epinephrine",2],["ACE_morphine",2],["ACE_adenosine",2],["kat_larynx",2],["kat_Pulseoximeter",2],["kat_chestSeal",2],["ACE_WaterBottle",1],["kat_aatKit",1],["ACE_Flashlight_XL50",1],["ACE_MRE_BeefStew",1],["ACE_WaterBottle_Half",1],["rhsusf_mag_17Rnd_9x19_JHP",1,17],["Tier1_30Rnd_556x45_Mk318Mod0_EMag",2,30]]],["Crye_AVS_CB_4",[["ACE_fieldDressing",10],["ACE_M84",2,1],["SmokeShell",2,1],["HandGrenade",2,1],["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",3,30],["Tier1_30Rnd_556x45_Mk318Mod0_EMag",2,30]]],["fatpack_coy",[["ACE_fieldDressing",10],["ACE_salineIV",2],["ACE_salineIV_500",2],["ACE_salineIV_250",2],["kat_accuvac",1],["kat_AED",1],["nid_detc",1],["ACE_WaterBottle",4],["ACE_MRE_LambCurry",2],["H_Bandanna_camo",1],["Maritime_Cover_ComtacIII15354_manta",1],["Louetta_G24_1",1],["cag_mask_3_tan",1],["SmokeShell",2,1],["SmokeShellRed",2,1],["SmokeShellPurple",2,1]]],"mac_cap_gold_coms","",["ACE_Vector","","","",[],[],""],["ItemMap","ItemGPS","TFAR_anprc152_7","ItemCompass","ACE_Altimeter",""]]

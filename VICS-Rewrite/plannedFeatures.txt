@@ -1,0 +1,109 @@
+Zuhair al-Shareef
+
+IED Replacement/limit amount
+Adjust civilian interaction for missions
+add reports of civilian deaths
+Gulag for flood and aidan
+Change body cleanup
+?Change capture status?
+fix ai spawning dead
+Multiple save files via missionNamePreFix
+ai Overwatch positions
+dynamic Fragos
+Deeper civilian Population
+Auto fob generation for hostiles
+multiple factions of hostiles(east,indp)
+move debug to proper organizations
+breakout Debug options
+AI generation economy
+Figure out a way to get last catupred by per objective
+ai have to capture other objectives
+enemy persistance ASAP
+small groups will regroup and join together
+opfor morale and aggression
+clandestine OPs
+civs with guns
+Enemy can utilize dead player gear
+approved times on leaderboard for training
+reload previous enemies practice
+handcuff all enemies via script
+retask enemies near newly captured OBJs
+reset print for stats
+required death reporting
+Point system for economy of players
+Points removed for false reports/negligent reports
+Check for players killed
+Check for civs killed
+Some sort of AAR system
+auto restart
+Large scale goals/tasks
+short term goals/tasks
+
+
+
+work order:
+
+small groups will regroup and join together
+Groups that arent moving will retask
+Auto save
+24/7 uptime
+
+To be completed:
+Build mission generation system - using helpers, we dynamically grab them and create objects/units in those positions allowing for dynamic mission build design.
+continue work on economy
+ai Response to objectives being attacked/not captured, [current mission, objective/pos]
+
+
+in testing:
+Body cleanup - Simple, but will need to be checked
+persistent markers - will see how MP Plays
+update debug to reflect the owner and ticks - Related to the marker weight debug
+setup marker weight debug - Basic System put together
+AI population in buildings - looks to be working
+opfor Force pool balance - TBD.
+getting objectives captured and checking the decay and previous owner for update on tick, probably change the loading to keep the full data in one array - looks functional?
+obj decay, double check function, maybe be able to display obj info if player standing in it? - looks okay
+Figure out enemy persistance - looking good so far
+
+
+Finished:
+be able to reset all variables - Looks good
+Figure out AI not spawning in captured sectors - seems good
+Slow down timer for core loop - EZ
+enemies recon and assault blufor sectors - Kinda? They have tasking framework
+start working on the different tasking functions for their actions, attack, recon ect. - Sorta, they have tasking framework
+ENEMY TASKING FOR GODS SAKE FIGURE IT OUT - Figure out a way to complete tasking https://community.bistudio.com/wiki/inArea - again, tasking framework
+Get loop system figured out and working - functioning
+complete/convert opfor_convert - needs testing - I still dunno wtf opfor convert was
+make sure markers load on start, set them up with last captured by in 2nd index - markers setup to load, needs full loop implementation - Yeah fine
+
+
+
+
+
+
+
+variable Stored:
+missionNameSpace -
+currentMarkers
+
+profileNamespace -
+objectivesSaved
+objectiveMarkers
+enemy_presence_toggle
+obj_weight_toggle
+opforGroups
+opforGroupsSaved
+opforFobs
+aiLimit
+opforForcePool
+opforMorale
+savedDate
+startOrder
+userMarkers
+opforVehPool
+opforVehs
+
+
+
+player -

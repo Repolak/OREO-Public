@@ -1,0 +1,23 @@
+version=53;
+center[]={15507.188,8.5900002,16636.645};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,6.0442104,0};
+			angles[]={-0,3.2268631,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			name="C130";
+		};
+		id=173;
+		type="C130J_static_EP1";
+	};
+};

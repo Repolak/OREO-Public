@@ -1,0 +1,74 @@
+version=53;
+center[]={8151.1279,7,1370.1685};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.0014390945,0.050048828};
+					angles[]={0,2.1409755,0};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					isPlayer=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="rhs_weap_aks74u";
+							muzzle="rhs_acc_pgs64_74u";
+							class primaryMuzzleMag
+							{
+								name="rhs_30Rnd_545x39_7N6M_AK";
+								ammoLeft=30;
+							};
+						};
+						class uniform
+						{
+							typeName="UK3CB_TKM_O_U_06_B";
+							isBackpack=0;
+						};
+						class vest
+						{
+							typeName="UK3CB_V_Pouch";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhs_45Rnd_545X39_7N10_AK";
+									count=4;
+									ammoLeft=45;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						radio="ItemRadio";
+						headgear="UK3CB_ADE_O_H_Turban_01_2";
+					};
+				};
+				id=5;
+				type="UK3CB_TKM_O_RIF_1";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=4;
+	};
+};

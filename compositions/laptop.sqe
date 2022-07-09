@@ -1,0 +1,39 @@
+version=53;
+center[]={5023.0752,208.61563,5907.1885};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0083007813,0.4050293,-0.017578125};
+			angles[]={6.2606897,0,0.01749678};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=302;
+		type="Land_CampingTable_small_white_F";
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.015625,0.83468628,0.0083007813};
+			angles[]={6.2606897,0,0.017503591};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=303;
+		type="Land_Laptop_F";
+		atlOffset=1.5258789e-005;
+	};
+};

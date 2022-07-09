@@ -1,0 +1,49 @@
+version=54;
+center[]={8114.5791,3.5130348,8316.3535};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="junk_3";
+		class Entities
+		{
+			items=2;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.14355469,0.043345928,-0.10449219};
+					angles[]={6.2786703,2.0051258,0.016932372};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=3398;
+				type="Land_Garbage_square5_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.14306641,0.039435863,0.10546875};
+					angles[]={6.2786703,0.67526674,0.016932372};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=3399;
+				type="Land_Garbage_square5_F";
+			};
+		};
+		id=3397;
+		atlOffset=-0.0020158291;
+	};
+};

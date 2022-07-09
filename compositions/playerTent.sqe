@@ -1,0 +1,22 @@
+version=54;
+center[]={4096.8145,5,4099.5884};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.61924553,0};
+			angles[]={-0,4.6614475,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=1;
+		type="Land_TentDome_F";
+	};
+};
