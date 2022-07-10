@@ -17,11 +17,11 @@ civ_fnc_ConversationEnd = {
 civ_fnc_InteractQuestionsPop = {
   params ["_category"];
   _greetings = [9101,9102,9103,9104,9105,9106,9107,9108,9109,9110,9111,9112,9113,9114];
-  _questions = [];
-  _hostileQuestions = [];
-  _civilianQuestions = [];
-  _civActions = [];
-  _allChildOptions = [9101,9102,9103,9104,9105,9106,9107,9108,9109,9110,9111,9112,9113,9114];
+  _questions = [9201,9202,9203,9204,9205,9206,9207,9208,9209,9210,9211,9212,9213,9214];
+  _hostileQuestions = [9301,9302,9303,9304,9305,9306,9307,9308,9309,9310,9311,9312,9313,9314];
+  _civilianQuestions = [9401,9402,9403,9404,9405,9406,9407,9408,9409,9410,9411,9412,9413,9414];
+  _civActions = [9601,9602,9603,9604,9605,9606,9607,9608,9609,9610,9611,9612,9613,9614];
+  _allChildOptions = [9101,9102,9103,9104,9105,9106,9107,9108,9109,9110,9111,9112,9113,9114,9201,9202,9203,9204,9205,9206,9207,9208,9209,9210,9211,9212,9213,9214,9301,9302,9303,9304,9305,9306,9307,9308,9309,9310,9311,9312,9313,9314,9401,9402,9403,9404,9405,9406,9407,9408,9409,9410,9411,9412,9413,9414,9601,9602,9603,9604,9605,9606,9607,9608,9609,9610,9611,9612,9613,9614];
   if (_category == "greetings") then {
     {
       ctrlShow [_x, false];
@@ -70,7 +70,7 @@ civ_fnc_InteractQuestionsPop = {
 
 civ_fnc_questionWipe = {
   [] spawn {
-    _allChildOptions = [9101,9102,9103,9104,9105,9106,9107,9108,9109,9110,9111,9112,9113,9114];
+    _allChildOptions = [9101,9102,9103,9104,9105,9106,9107,9108,9109,9110,9111,9112,9113,9114,9201,9202,9203,9204,9205,9206,9207,9208,9209,9210,9211,9212,9213,9214,9301,9302,9303,9304,9305,9306,9307,9308,9309,9310,9311,9312,9313,9314,9401,9402,9403,9404,9405,9406,9407,9408,9409,9410,9411,9412,9413,9414,9601,9602,9603,9604,9605,9606,9607,9608,9609,9610,9611,9612,9613,9614];
     {
         ctrlShow [_x, false];
     } forEach _allChildOptions;
@@ -441,4 +441,37 @@ civ_fnc_handMoney = {
   } else {
     systemChat "You do not have any money to give.";
   };
+};
+
+civ_fnc_textPeople = {
+  /*
+  _people = ["Fred Drake", "Fredrick Elignore", "Fred Capt"];
+  _textInput = toUpper ctrlText 1400;
+  _textInput =
+  */
+};
+
+civ_fnc_chatTest = {
+  _text3 = ctrlText 1102;
+  _text2 = ctrlText 1101;
+  _text1 = ctrlText 1100;
+  _userText = ctrlText 1400;
+
+  if ((_userText == "Carter Church")) then {
+    if !(_text3 isEqualTo "") then {
+      ctrlSetText [1100,_text2];
+      ctrlSetText [1101,_text3];
+      ctrlSetText [1102,"Oh yeah, that boi who be rappin? Im a big fan!"];
+    } else {
+      ctrlSetText [1102,"Oh yeah, that boi who be rappin? Im a big fan!"];
+    };
+  } else {
+    ctrlSetText [1100,_text2];
+    ctrlSetText [1101,_text3];
+    ctrlSetText [1102,_userText];
+  };
+};
+
+civ_fnc_textCycle = {
+  params ["_newText"];
 };
