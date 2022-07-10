@@ -1680,6 +1680,88 @@ class RBDDialogMain
   };
 };
 
+class civInteractTextInput
+{
+  idd = -1; //no need for the whole dialog to be referenced at any time.
+  movingEnable = false; //not moving
+  moving = 1; // who the hell knows what this does????????
+  onLoad = ""; //code to run when it loads
+  onUnload = ""; //code to run when its closed
+  controls[] = {
+    textInput,
+    textResponse1,
+    textResponse2,
+    textResponse3,
+    questionAskBtn,
+    questionBackBtn
+
+  }; //anything that doesn't fit into the category below
+  controlsBackground[] = {civInteractMainBack}; //background things that can’t be interacted with
+
+  class civInteractMainBack: IGUIBack
+  {
+  	idc = 2200;
+
+    x = 0.2525 * safezoneW + safezoneX;
+    y = 0.258 * safezoneH + safezoneY;
+    w = 0.489844 * safezoneW;
+    h = 0.484 * safezoneH;
+  };
+
+  class textInput: RscEdit
+  {
+  	idc = 1400;
+  	text = "Text Input"; //--- ToDo: Localize;
+  	x = 0.309218 * safezoneW + safezoneX;
+  	y = 0.247 * safezoneH + safezoneY;
+  	w = 0.376406 * safezoneW;
+  	h = 0.033 * safezoneH;
+  };
+  class textResponse1: RscStructuredText
+  {
+  	idc = 1100;
+  	x = 0.309219 * safezoneW + safezoneX;
+  	y = 0.291 * safezoneH + safezoneY;
+  	w = 0.190781 * safezoneW;
+  	h = 0.132 * safezoneH;
+  };
+  class textResponse2: RscStructuredText
+  {
+  	idc = 1101;
+  	x = 0.309219 * safezoneW + safezoneX;
+  	y = 0.434 * safezoneH + safezoneY;
+  	w = 0.190781 * safezoneW;
+  	h = 0.132 * safezoneH;
+  };
+  class textResponse3: RscStructuredText
+  {
+  	idc = 1102;
+  	x = 0.309219 * safezoneW + safezoneX;
+  	y = 0.577 * safezoneH + safezoneY;
+  	w = 0.190781 * safezoneW;
+  	h = 0.132 * safezoneH;
+  };
+  class questionAskBtn: RscButton
+  {
+  	idc = 1600;
+    action = "call civ_fnc_chatTest";
+  	text = "Ask"; //--- ToDo: Localize;
+  	x = 0.577344 * safezoneW + safezoneX;
+  	y = 0.302 * safezoneH + safezoneY;
+  	w = 0.103125 * safezoneW;
+  	h = 0.044 * safezoneH;
+  };
+  class questionBackBtn: RscButton
+  {
+    idc = 1600;
+    action = "closeDialog 0; createDialog 'civInteractMain';";
+    text = "Back"; //--- ToDo: Localize;
+    x = 0.577344 * safezoneW + safezoneX;
+    y = 0.372 * safezoneH + safezoneY;
+    w = 0.103125 * safezoneW;
+    h = 0.044 * safezoneH;
+  };
+};
 
 
 class civInteractMain
@@ -1709,7 +1791,63 @@ class civInteractMain
     GreetingAction11,
     GreetingAction12,
     GreetingAction13,
-    GreetingAction14
+    GreetingAction14,
+    BasicAction1,
+    BasicAction2,
+    BasicAction3,
+    BasicAction4,
+    BasicAction5,
+    BasicAction6,
+    BasicAction7,
+    BasicAction8,
+    BasicAction9,
+    BasicAction10,
+    BasicAction11,
+    BasicAction12,
+    BasicAction13,
+    BasicAction14,
+    EnemyAction1,
+    EnemyAction2,
+    EnemyAction3,
+    EnemyAction4,
+    EnemyAction5,
+    EnemyAction6,
+    EnemyAction7,
+    EnemyAction8,
+    EnemyAction9,
+    EnemyAction10,
+    EnemyAction11,
+    EnemyAction12,
+    EnemyAction13,
+    EnemyAction14,
+    CivilianAction1,
+    CivilianAction2,
+    CivilianAction3,
+    CivilianAction4,
+    CivilianAction5,
+    CivilianAction6,
+    CivilianAction7,
+    CivilianAction8,
+    CivilianAction9,
+    CivilianAction10,
+    CivilianAction11,
+    CivilianAction12,
+    CivilianAction13,
+    CivilianAction14,
+    UnitAction1,
+    UnitAction2,
+    UnitAction3,
+    UnitAction4,
+    UnitAction5,
+    UnitAction6,
+    UnitAction7,
+    UnitAction8,
+    UnitAction9,
+    UnitAction10,
+    UnitAction11,
+    UnitAction12,
+    UnitAction13,
+    UnitAction14
 
   }; //anything that doesn't fit into the category below
   controlsBackground[] = {civInteractMainBack}; //background things that can’t be interacted with
@@ -1983,6 +2121,749 @@ class civInteractMain
   	h = 0.044 * safezoneH;
   	colorActive[] = {0.922,0.643,0.204,1};
   };
+
+  //
+  //Basic Actions
+  //
+
+  class BasicAction1: RscButton
+  {
+    idc = 9201;
+    action = "closeDialog 0; createDialog 'civInteractTextInput';";
+
+    text = "Have a chat."; //--- ToDo: Localize;
+    x = 0.489687 * safezoneW + safezoneX;
+    y = 0.269 * safezoneH + safezoneY;
+    w = 0.0825 * safezoneW;
+    h = 0.044 * safezoneH;
+    colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction2: RscButton
+  {
+    idc = 9202;
+    action = "";
+
+    text = "Action 2."; //--- ToDo: Localize;
+    x = 0.587656 * safezoneW + safezoneX;
+    y = 0.269 * safezoneH + safezoneY;
+    w = 0.0825 * safezoneW;
+    h = 0.044 * safezoneH;
+    colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction3: RscButton
+  {
+    idc = 9203;
+  	action = "";
+
+  	text = "Action 3."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.335 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction4: RscButton
+  {
+    idc = 9204;
+  	action = "";
+
+  	text = "Action 4."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.335 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction5: RscButton
+  {
+    idc = 9205;
+  	action = "";
+
+  	text = "Action 5."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.401 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction6: RscButton
+  {
+    idc = 9206;
+  	action = "";
+
+  	text = "Action 6."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.401 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction7: RscButton
+  {
+    idc = 9207;
+  	action = "";
+
+  	text = "Action 7."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.467 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction8: RscButton
+  {
+    idc = 9208;
+  	action = "";
+
+  	text = "Action 8."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.467 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction9: RscButton
+  {
+    idc = 9209;
+  	action = "";
+
+  	text = "Action 9."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.533 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction10: RscButton
+  {
+    idc = 9210;
+  	action = "";
+
+  	text = "Action 10."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.533 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction11: RscButton
+  {
+    idc = 9211;
+  	action = "";
+
+  	text = "Action 11."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.599 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction12: RscButton
+  {
+    idc = 9212;
+  	action = "";
+
+  	text = "Action 12."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.599 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class BasicAction13: RscButton
+  {
+    idc = 9213;
+  	action = "";
+
+  	text = "Action 13."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.665 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+  class BasicAction14: RscButton
+  {
+    idc = 9214;
+  	action = "";
+
+  	text = "Action 14."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.665 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  //
+  //Enemy Actions
+  //
+
+  class EnemyAction1: RscButton
+  {
+    idc = 9301;
+    action = "";
+
+    text = "Action 1."; //--- ToDo: Localize;
+    x = 0.489687 * safezoneW + safezoneX;
+    y = 0.269 * safezoneH + safezoneY;
+    w = 0.0825 * safezoneW;
+    h = 0.044 * safezoneH;
+    colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction2: RscButton
+  {
+    idc = 9302;
+    action = "";
+
+    text = "Action 2."; //--- ToDo: Localize;
+    x = 0.587656 * safezoneW + safezoneX;
+    y = 0.269 * safezoneH + safezoneY;
+    w = 0.0825 * safezoneW;
+    h = 0.044 * safezoneH;
+    colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction3: RscButton
+  {
+    idc = 9303;
+  	action = "";
+
+  	text = "Action 3."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.335 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction4: RscButton
+  {
+    idc = 9304;
+  	action = "";
+
+  	text = "Action 4."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.335 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction5: RscButton
+  {
+    idc = 9305;
+  	action = "";
+
+  	text = "Action 5."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.401 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction6: RscButton
+  {
+    idc = 9306;
+  	action = "";
+
+  	text = "Action 6."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.401 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction7: RscButton
+  {
+    idc = 9307;
+  	action = "";
+
+  	text = "Action 7."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.467 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction8: RscButton
+  {
+    idc = 9308;
+  	action = "";
+
+  	text = "Action 8."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.467 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction9: RscButton
+  {
+    idc = 9309;
+  	action = "";
+
+  	text = "Action 9."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.533 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction10: RscButton
+  {
+    idc = 9310;
+  	action = "";
+
+  	text = "Action 10."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.533 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction11: RscButton
+  {
+    idc = 9311;
+  	action = "";
+
+  	text = "Action 11."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.599 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction12: RscButton
+  {
+    idc = 9312;
+  	action = "";
+
+  	text = "Action 12."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.599 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class EnemyAction13: RscButton
+  {
+    idc = 9313;
+  	action = "";
+
+  	text = "Action 13."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.665 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+  class EnemyAction14: RscButton
+  {
+    idc = 9314;
+  	action = "";
+
+  	text = "Action 14."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.665 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  //
+  //Civilian Actions
+  //
+
+  class CivilianAction1: RscButton
+  {
+    idc = 9401;
+    action = "";
+
+    text = "Action 1."; //--- ToDo: Localize;
+    x = 0.489687 * safezoneW + safezoneX;
+    y = 0.269 * safezoneH + safezoneY;
+    w = 0.0825 * safezoneW;
+    h = 0.044 * safezoneH;
+    colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction2: RscButton
+  {
+    idc = 9402;
+    action = "";
+
+    text = "Action 2."; //--- ToDo: Localize;
+    x = 0.587656 * safezoneW + safezoneX;
+    y = 0.269 * safezoneH + safezoneY;
+    w = 0.0825 * safezoneW;
+    h = 0.044 * safezoneH;
+    colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction3: RscButton
+  {
+    idc = 9403;
+  	action = "";
+
+  	text = "Action 3."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.335 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction4: RscButton
+  {
+    idc = 9404;
+  	action = "";
+
+  	text = "Action 4."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.335 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction5: RscButton
+  {
+    idc = 9405;
+  	action = "";
+
+  	text = "Action 5."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.401 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction6: RscButton
+  {
+    idc = 9406;
+  	action = "";
+
+  	text = "Action 6."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.401 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction7: RscButton
+  {
+    idc = 9407;
+  	action = "";
+
+  	text = "Action 7."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.467 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction8: RscButton
+  {
+    idc = 9408;
+  	action = "";
+
+  	text = "Action 8."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.467 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction9: RscButton
+  {
+    idc = 9409;
+  	action = "";
+
+  	text = "Action 9."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.533 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction10: RscButton
+  {
+    idc = 9410;
+  	action = "";
+
+  	text = "Action 10."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.533 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction11: RscButton
+  {
+    idc = 9411;
+  	action = "";
+
+  	text = "Action 11."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.599 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction12: RscButton
+  {
+    idc = 9412;
+  	action = "";
+
+  	text = "Action 12."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.599 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class CivilianAction13: RscButton
+  {
+    idc = 9413;
+  	action = "";
+
+  	text = "Action 13."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.665 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+  class CivilianAction14: RscButton
+  {
+    idc = 9414;
+  	action = "";
+
+  	text = "Action 14."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.665 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  //
+  //Unit Actions
+  //
+
+  class UnitAction1: RscButton
+  {
+    idc = 9601;
+    action = "";
+
+    text = "Action 1."; //--- ToDo: Localize;
+    x = 0.489687 * safezoneW + safezoneX;
+    y = 0.269 * safezoneH + safezoneY;
+    w = 0.0825 * safezoneW;
+    h = 0.044 * safezoneH;
+    colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction2: RscButton
+  {
+    idc = 9602;
+    action = "";
+
+    text = "Action 2."; //--- ToDo: Localize;
+    x = 0.587656 * safezoneW + safezoneX;
+    y = 0.269 * safezoneH + safezoneY;
+    w = 0.0825 * safezoneW;
+    h = 0.044 * safezoneH;
+    colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction3: RscButton
+  {
+    idc = 9603;
+  	action = "";
+
+  	text = "Action 3."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.335 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction4: RscButton
+  {
+    idc = 9604;
+  	action = "";
+
+  	text = "Action 4."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.335 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction5: RscButton
+  {
+    idc = 9605;
+  	action = "";
+
+  	text = "Action 5."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.401 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction6: RscButton
+  {
+    idc = 9606;
+  	action = "";
+
+  	text = "Action 6."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.401 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction7: RscButton
+  {
+    idc = 9607;
+  	action = "";
+
+  	text = "Action 7."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.467 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction8: RscButton
+  {
+    idc = 9608;
+  	action = "";
+
+  	text = "Action 8."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.467 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction9: RscButton
+  {
+    idc = 9609;
+  	action = "";
+
+  	text = "Action 9."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.533 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction10: RscButton
+  {
+    idc = 9610;
+  	action = "";
+
+  	text = "Action 10."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.533 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction11: RscButton
+  {
+    idc = 9611;
+  	action = "";
+
+  	text = "Action 11."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.599 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction12: RscButton
+  {
+    idc = 9612;
+  	action = "";
+
+  	text = "Action 12."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.599 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+  class UnitAction13: RscButton
+  {
+    idc = 9613;
+  	action = "";
+
+  	text = "Action 13."; //--- ToDo: Localize;
+  	x = 0.489687 * safezoneW + safezoneX;
+  	y = 0.665 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+  class UnitAction14: RscButton
+  {
+    idc = 9614;
+  	action = "";
+
+  	text = "Action 14."; //--- ToDo: Localize;
+  	x = 0.587656 * safezoneW + safezoneX;
+  	y = 0.665 * safezoneH + safezoneY;
+  	w = 0.0825 * safezoneW;
+  	h = 0.044 * safezoneH;
+  	colorActive[] = {0.922,0.643,0.204,1};
+  };
+
+
+
 };
 
 
